@@ -1,0 +1,108 @@
+/* Dejinta guud ee style-ka */
+* {
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+/* Class-ka saxda ah waa .align (ma ahan .aling) */
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Qaabka guud ee body-ga */
+body {
+    background-color: #252525;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+/* Qaybta muujinaysa turn-ka */
+.turn-container {
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+/* Cinwaanka "Turn For" */
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Box-yada X iyo O ee turn-ka */
+.turn-container .turn-box {
+    border: 3px solid #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Ka saar xadka midig ee box labaad */
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+/* Background-ka cas ee guuraya marka turn is beddelo */
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #f1003c;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* Qaabka grid-ka ciyaarta */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #000;
+}
+
+/* Sanduuq kasta oo ciyaarta ah */
+.box {
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Hover effect */
+.box:hover {
+    background-color: #f1003c;
+}
+
+/* Button-ka Play Again */
+#play-again {
+    background-color: #f1003c;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hover-ka Play Again */
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: #08d9d6;
+    color: #000;
+}
